@@ -10,9 +10,9 @@ export default defineConfig({
   },
   fonts: [
     {
-      provider: fontProviders.google(),
-      name: 'Open Sans',
-      cssVariable: '--font-open-sans',
+      provider: fontProviders.fontsource(),
+      name: 'Outfit',
+      cssVariable: '--font-outfit',
     },
   ],
 })
