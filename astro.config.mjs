@@ -11,8 +11,8 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: 'Inconsolata',
-      cssVariable: '--font-inconsolata',
+      name: 'Open Sans',
+      cssVariable: '--font-open-sans',
     },
   ],
 })
