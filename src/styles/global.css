@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+:root {
+  --color-primary: var(--color-blue-300);
+
+  font-family: var(--font-inconsolata);
+}
+
+.header {
+  @apply fixed top-0 right-0 left-0 z-20;
+
+  .navbar-container {
+    @apply container mx-auto my-4;
+
+    .navbar {
+      @apply text-white text-lg;
+      @apply bg-neutral-100/10 backdrop-blur-md;
+      @apply px-4;
+      @apply list-none flex justify-end;
+
+      ul {
+        @apply transition-all border-b-3 border-transparent;
+        @apply py-4 mx-3;
+        @apply hover:border-(--color-primary) hover:cursor-pointer hover:text-(--color-primary);
+      }
+    }
+  }
+}
